@@ -1,0 +1,45 @@
+
+/* Resimler için stil tanımı */
+img {
+    width: 530px;
+    aspect-ratio: auto 400 / 150;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HTML içeriğinin stil tanımı,her şey ortada dursun. */
+html {
+    text-align: center;
+}
+
+/*Arama barlarına ayrı ayrı boyut ayarlaması için id atadım */
+#search-bar-1 {
+    padding-block: 7px; 
+    padding-inline: 160px;
+}
+/*İkınci arama barı */
+#search-bar-2 {
+    padding-block: 4px; 
+    padding-inline: 30px;
+    font-size: 18px;
+}
+/* Butonlar icin */
+input[type="button"] {
+    padding-block: 4px; 
+    padding-inline: 13px;
+    font-size: 18px;
+}
+
+
+table {
+    margin: auto;
+}
+
+p {
+    margin-bottom: auto;
+}
+body {
+    font-size: 23px;
+}
