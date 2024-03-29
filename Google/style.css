@@ -1,0 +1,209 @@
+.header {
+  /* Listenin işaretlerini kaldırdım ve sağa hizaladım. */
+  list-style: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  text-align: right;
+}
+
+.headerli {
+  /* Öğeleri yan yana göstermek için inline-block kullandım ve her birine margin ekledim. */
+  display: inline-block;
+  margin: 8px;
+}
+
+.headerli a {
+  /* Bağlantıları blok haline getirerek düzenledim ve renk, padding ve text-decoration ayarları yaptım. */
+  display: block;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+#profilepic {
+  /* Profil resminin boyutunu ve kenarlarını yuvarlak hale getirdim. */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.headerli a:hover {
+  /* Bağlantılara üzerine gelindiğinde altını çizme efekti ekledim. */
+  text-decoration: underline;
+}
+
+.container {
+  /* İçeriği merkezi hizaladım. */
+  text-align: center;
+  margin: 60px auto;
+}
+
+.search-area {
+  /* Arama alanını düzenledim: genişlik, kutu gölgesi, ve içeriğin hizalaması. */
+  background: #fff;
+  display: flex;
+  border: none;
+  box-shadow: none;
+  height: 44px;
+  margin: auto;
+  width: 480px; /*Arama alanında yazı yazılan yerin genişliği 480px */
+  outline: none;
+}
+
+.search-area:hover {
+  /* Arama alanına fareyle gelindiğinde hafif bir gölge efekti ekledim. */
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search {
+  /* Arama bileşenini düzenledim: içeriğin hizalanması ve padding. */
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 100px; /* Arama ikonunun sağa kaydırılması için padding eklendi. */
+}
+
+.search-img {
+  /* Arama ikonunu düzenledim: hizalama, boşluk ve içeriğin hizalanması. */
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+#searchlogo {
+  /* Sesli arama ikonunun boyutunu ve konumunu ayarladım. */
+  width: 30px;
+  position: absolute;
+  left: 1000px; /* Sesli arama ikonunun sağa kaydırılması için left değeri değiştirildi. */
+}
+#voicelogo /* Arama ikonunun boyutunu ve konumunu ayarladım. */{
+position: absolute;
+right: 1000px; /* Arama ikonunun sağa kaydırılması için left değeri değiştirildi. */
+}
+
+.search-img span {
+  /* Arama ikonu stilini düzenledim: renk ve boyut. */
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+.input-enter {
+  /* Giriş alanını düzenledim: içeriğin hizalanması ve flex özellikleri. */
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-area {
+  /* Giriş alanını düzenledim: renk, kenar yuvarlama ve boyut. */
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-sesif;
+  line-height: 36px;
+  display: block;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.input {
+  /* Giriş alanını düzenledim: renk, boyut, hizalama ve kenarlar. */
+  margin: 0;
+  padding: 0;
+  color: #5f6368 (0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -73px;
+  font: 16px arial, sans-serif;
+  line-height: 36px;
+  height: 36px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  text-align: start;
+  cursor: text;
+  border: none;
+  width: 100px;
+}
+
+.button-container {
+  /* Düğme konteynırını düzenledim: içeriğin hizalanması ve ortalanması. */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.googlesearch, .feelinglucky {
+  /* Düğme stillerini düzenledim: kenarlık, arka plan ve boyutlar. */
+  margin: 0 5px;
+  padding: 0 20px;
+  height: 36px;
+  line-height: 36px;
+  font-family: Arial, sans-serif; /*Arial, yazı rengi #5f6368, yazı boyutu 14px . Button yüksekliği 36px.*/
+  font-size: 14px;
+  color: #5f6368;
+  background-color: #ffffff;
+  border: 1px solid #f2f2f2; /* Button kenarları 1px kalın #f2f2f2 renginde */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.googlesearch:hover,
+.feelinglucky:hover {
+  /* Fare ile üzerine gelindiğinde düğme üzerindeki gölgeyi değiştirir. */
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  /* Listenin işaretlerini kaldırdım ve arka plan rengini ayarladım. */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: 10px;
+  line-height: 10px;
+  list-style: none;
+  background-color: #f2f2f2; /*Footerda arkaplan rengi #f2f2f2  ve liste noktalarını kaldırıldı.*/
+}
+
+.footerli {
+  /* Footer elemanlarını yan yana göstermek için float kullandım. */
+  float: left;
+}
+
+.footerli a {
+  /* Footer bağlantılarını düzenledim: renk, hizalama ve boyut. */
+  display: block;
+  color: #70757a;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+
+.footerli a:hover {
+  /* Footer bağlantılarına üzerine gelindiğinde altını çizme efekti ekledim. */
+  text-decoration: underline;
+}
